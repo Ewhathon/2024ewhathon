@@ -1,0 +1,11 @@
+path: ../data/card_data
+train: autosplit_train.txt
+val: autosplit_val.txt
+
+names:
+  0: old_sign
+  1: old_card
+  2: new_sign
+  3: new_card
+  4: not_sign
+  5: not_card

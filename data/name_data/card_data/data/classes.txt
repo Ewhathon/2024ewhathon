@@ -1,0 +1,6 @@
+old_sign
+old_card
+new_sign
+new_card
+not_sign
+not_card
