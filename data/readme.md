@@ -1,2 +1,1 @@
-깃허브 리포지토리입니다.
-https://github.com/Ewha-Hackathon
+[data_3.json](https://github.com/Ewhathon/2024ewhathon/files/14626639/data_3.json)
