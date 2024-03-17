@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문 추가</title>
+</head>
+<body>
+    <h1>질문 추가</h1>
+    <form method="POST">
+        <label for="question">질문 내용:</label>
+        <input type="text" id="question" name="question" required><br><br>
+        
+        <button type="submit">질문 추가</button>
+    </form>
+    <form action="/survey_complete" method="GET">
+        <button type="submit">설문 작성 완료</button>
+    </form>
+</body>
+</html>

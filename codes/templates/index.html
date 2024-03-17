@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey App</title>
+</head>
+<body>
+    <h1>Welcome to Survey App</h1>
+    {% if username %}
+    <h3>안녕하세요, {{ username }}님!</h3>
+    <a href="/logout">logout</a>
+    {% else %}
+    <a href="/login">login</a>
+    {% endif %}
+    {% if message %}
+    <p>{{ message }}</p><br>
+    {% endif %}
+
+    
+    <p><a href="{{ url_for('search') }}">Search Surveys</a></p>
+    <p><a href="{{ url_for('my_page') }}">My Page</a></p>
+    <p><a href="{{ url_for('register') }}">Register</a></p>
+    <p><a href="{{ url_for('add_survey') }}">Add Survey</a></p>
+    <p><a href="{{ url_for('survey_list') }}">Survey List</a></p>
+    <a href="/encrypt"><button>Go to Encrypt Page</button></a>
+</body>
+</html>
