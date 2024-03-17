@@ -1,7 +1,7 @@
 # 백엔드
 ## 코드
 https://github.com/EarlyUs/back
-
+<br>
 ## 🎲 백엔드 관여 주요 기능
 ### 장애 학생 수업 매칭 기능
 - 도우미 희망자가 활동 가능하다고 선택한 시간에 장애 학생의 수업 시간이 모두 포함되는 경우, 활동 가능한 수업으로 매칭
@@ -25,14 +25,15 @@ public int hashCode() {
 }
 ```
 
-
-  
+<br>
+=
 ### 날개 매칭 기능 
 - 기획팀이 제작한 날개 유형 데이터를 저장해 전공 일치 여부와 도우미가 제공하고자 하는 도움 유형에 따라 도우미의 날개 유형을 판단
 - DisabledCourse에 도우미와 일치하는 전공의 수업이 존재하는지 여부에 따라 majorMatched에 0 또는 1을 저장
 - 날개 유형 중 `전공 일치 여부`, `도움 유형` 이 일치하는 날개 하나를 찾아서 반환
 
-  
+<br>
+<br>
 
 ## 🛠 서비스 구조 및 흐름
 ![](https://blog.kakaocdn.net/dn/nn1NH/btsFt3BRvzR/xMSfFzHPA4gkRdwd2wEMaK/img.png)
@@ -57,8 +58,9 @@ public int hashCode() {
 - Docker
 - Github Actions
 
+<br>
+<br>
   
-
 ## 🦺 테스트 코드
 - 주요 기능을 제공하는 match 도메인에 대한 테스트 코드 작성
 - Jacoco를 이용해 테스트 커버리지 측정
