@@ -17,6 +17,16 @@ https://github.com/BabEwha/BabEwha-Client
 
 <br/><br/>
 
+
+## 🍙 팀원 소개
+
+| <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/1a77ca56-1b72-48cc-81e1-09d2d2ee1688"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/0c997a4a-b942-457a-8c20-fb8bdd0a7277"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/f1414b85-9269-4aae-a121-af8e01090579"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/6b676f0c-d5e1-44e9-ab1d-1d00d7c48046"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/4be5a2b8-fd32-4ccc-b89c-00d4269c77ce"/> |
+| --- | --- | --- | --- | --- |
+| **엄채은(2326013)** | **양연우(2198059)** | **허혜민(1971056)** | **김원정(2176083)** | **이남영(2076293)** |
+| 기획(팀장) | 디자이너 | 프론트엔드 | 백엔드 | IT기술(AI) |
+
+<br/><br/>
+
 ## 🍙 프로젝트 구조
 
 <img width="1000" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/adda6865-b0f4-4f80-9cad-79eb534990bb"/>
@@ -24,15 +34,6 @@ https://github.com/BabEwha/BabEwha-Client
 - Client: Swift(iOS)
 - Server: Django, MySQL, AWS EC2, AWS S3
 - AI: Google Vision, Flask, AWS EC2
-
-<br/><br/>
-
-## 🍙 팀원 소개
-
-| <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/1a77ca56-1b72-48cc-81e1-09d2d2ee1688"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/0c997a4a-b942-457a-8c20-fb8bdd0a7277"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/f1414b85-9269-4aae-a121-af8e01090579"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/6b676f0c-d5e1-44e9-ab1d-1d00d7c48046"/> | <img width="200" src="https://github.com/BabEwha/BabEwha-ai-private/assets/91009436/4be5a2b8-fd32-4ccc-b89c-00d4269c77ce"/> |
-| --- | --- | --- | --- | --- |
-| **엄채은** | **양연우** | **허혜민** | **김원정** | **이남영** |
-| 기획 | 디자이너 | 프론트엔드 | 백엔드 | IT기술(AI) |
 
 <br/><br/>
 
