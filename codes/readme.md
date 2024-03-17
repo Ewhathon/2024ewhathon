@@ -1,4 +1,4 @@
-코드 URL</br>
+<h1>코드 URL</h1></br>
 
 https://github.com/ewhamoa
 
@@ -6,9 +6,9 @@ https://github.com/ewhamoa
 </br>
 
 
-파일 구조 </br> </br>
+<h1>파일 구조</h1> </br> 
 
-EwhaMoa_FE repo (프론트엔드) </br> 
+<h4>EwhaMoa_FE repo (프론트엔드)</h4> 
 
 public: 로컬 사진 자료 </br>
 src: App.jsx를 포함한 전체 메인 코드 폴더 </br>
@@ -57,7 +57,7 @@ sort: 필터링 분류 요소
 </br>
 </br>
 
-EwhaMoa_BE repo (백엔드) </br>
+<h4>EwhaMoa_BE repo (백엔드)</h4> 
 
 /EwhaMoa_BE/src/main/java/com/example/EwhaMoa_BE: 백엔드 자바 코드 </br>
 초반에는 기능별로 분류하여 작업했으나 기능별로 분류할 시 bean을 찾지 못하는 에러가 생겨 파일 수준 구분 없이 한 디렉터리에 넣어두었습니다 </br>
@@ -73,7 +73,7 @@ S3Config: S3 버킷 연결을 위한 Configuration </br>
 </br>
 </br>
 
-/EwhaMoa_BE/src/main/python: 백엔드에 임베딩한 AI 코드* </br>
+<h4>/EwhaMoa_BE/src/main/python: 백엔드에 임베딩한 AI 코드*</h4> 
 
 - 동아리 이름을 입력받아 동아리를 추천하는 모델:
 데이터를 불러와 TF-IDF 벡터화를 진행합니다. 생성된 TF-IDF 행렬로 단어의 중요도를 판단하고 코사인 유사도를 계산할 수 있습니다. 코사인 유사도를 계산할 때엔 하나의 동아리에 대한 전체 동아리와의 유사도를 모두 계산했습니다. 이후 유사도가 높은 세 개의 동아리를 리턴하는 함수를 만들었습니다.
