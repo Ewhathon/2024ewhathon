@@ -1,15 +1,14 @@
 # 🍚 밥이화(BabEwha) 🍚
 ### OCR 기반 배달 어플리케이션 **🍚** **밥이화(BabEwha) 🍚** Client 레포지토리입니다.
-#### 1️⃣ Backend 레포지토리 링크: https://github.com/BabEwha/BabEwha-Backend
-#### 2️⃣ AI 레포지토리 링크: https://github.com/BabEwha/BabEwha-AI
+
+개발 기간: 2023.03.15(금) ~ 2023.03.17(일) <br/>
+예상 사용자 설문조사: 3.15(금) 21:00 ~ 3.17(일) 14:00<br/>
+설문 링크 (현재 폐쇄): https://docs.google.com/forms/d/e/1FAIpQLSfulZbuCy8cGD-FTW601AuBbd7FedH7zUMOYdtjfu-iqWXjSw/viewform?usp=sf_link
 
 <br/>
 
 ## 🍙 프로젝트 소개
 
-개발 기간: 2023.03.15(금) ~ 2023.03.17(일) <br/>
-예상 사용자 설문조사: 3.15(금) 21:00 ~ 3.17(일) 14:00<br/>
-설문 링크 (현재 폐쇄): https://docs.google.com/forms/d/e/1FAIpQLSfulZbuCy8cGD-FTW601AuBbd7FedH7zUMOYdtjfu-iqWXjSw/viewform?usp=sf_link
 
 <br/><br/>
 
