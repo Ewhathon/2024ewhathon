@@ -14,57 +14,6 @@
 # 프로토타입 영상
 https://drive.google.com/file/d/1jHOygkb6N74pcwgVMSboflIsJaVPsNEA/view?usp=sharing
 
-# 디렉토리 구조
-.
-├── auth
-│   ├── client_secrets.json
-│   ├── firebaseAuth.json
-│   └── token.json
-├── public
-│   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── __init__.cpython-310.pyc
-│   │   ├── app.cpython-310.pyc
-│   │   └── db_handler.cpython-310.pyc
-│   ├── app.py
-│   ├── create-account.html
-│   ├── db_handler.py
-│   ├── static
-│   │   ├── img
-│   │   │   ├── arrowedit.png
-│   │   │   ├── before.png
-│   │   │   ├── edit.png
-│   │   │   ├── ewhalogo.png
-│   │   │   ├── logo.png
-│   │   │   ├── more.png
-│   │   │   ├── mypage.png
-│   │   │   ├── mypage.svg
-│   │   │   ├── noti.png
-│   │   │   ├── noti.svg
-│   │   │   ├── pleeceex.png
-│   │   │   ├── plus.png
-│   │   │   ├── trash.png
-│   │   │   ├── 과잠.png
-│   │   │   ├── 플리스.jpeg
-│   │   │   ├── 후드티.png
-│   │   │   ├── 내디자인.png
-│   │   │   ├── 삭제버튼.png
-│   │   │   ├── 디자인등록.png
-│   │   │   └── 이미지등록.png
-│   │   └── style.css
-│   ├── templates
-│   │   ├── create-account.html
-│   │   ├── design-register.html
-│   │   ├── index.html
-│   │   ├── login.html
-│   │   ├── mypage.html
-│   │   ├── product-detail.html
-│   │   └── product-register.html
-│   ├── verify_card.py
-│   └── verify_card_model_train
-│       └── train.py
-└── quickstart.py
-
 # FrontEnd
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 
