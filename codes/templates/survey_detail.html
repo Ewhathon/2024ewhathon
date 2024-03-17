@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+
+<title>답변</title>
+<style>
+    body {
+        font-family: 'MaruBuri'; 
+        margin: 0;
+        padding: 0;
+        background-color: #00462A; 
+    }
+   .header {
+        text-align: center;
+        font-size: 45px; 
+        font-family: 'MaruBuri';
+        margin-bottom: 20px ; 
+        margin-top   :60px; 
+        color:#fff; 
+    }
+    .container {        
+        width: 600px; 
+        margin: 80px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'MaruBuri', sans-serif; 
+        font-size: 20px; 
+    }
+    .question {
+        margin-top :20px; 
+        margin-bottom: 30px; 
+        text-align: center; /* 질문 가운데 정렬 */
+        color: #000000; 
+    }
+    .answer {
+        margin-top :20px; 
+        margin-bottom: 30px; 
+    }
+    .submit-btn {
+        padding: 10px 30px; /* 버튼 내 여백 설정 */
+        background-color: #007bff; 
+        color: #fff; 
+        border: none;
+        cursor: pointer;
+        border-radius: 10px; 
+        font-family: 'MaruBuri', sans-serif; 
+        margin-left :240px; 
+    }
+    .submit-btn:hover {
+        background-color: #0056b3; 
+        margin-top :20px;
+    }
+    #opinion {
+        width: calc(100% - 50px);
+        margin-bottom: 7px; 
+    }
+    .question:nth-child(n+4) { /* 아래의 질문들을 왼쪽 정렬 */
+        text-align: left; 
+    }
+</style>
+</head>
+<body>
+
+<div class="header"><b>설문 답변</b></div>
+<div class="container">
+    <div class="question">
+        <label for="question1">질문 1: 당신의 성별은 무엇입니까?</label><br>
+        <input type="radio" name="question1" value="male" id="male">
+        <label for="male">남성</label>
+        <input type="radio" name="question1" value="female" id="female">
+        <label for="female">여성</label>
+    </div>
+    <div class="question">
+        <label for="question2">질문 2: 어느 연령대에 속하십니까?</label><br>
+        <select name="question2" id="age">
+            <option value="10s">10대</option>
+            <option value="20s">20대</option>
+            <option value="30s">30대</option>
+            <option value="40s">40대</option>
+            <option value="50s">50대</option>
+            <option value="60s">60대 이상</option>
+        </select>
+    </div>
+    <div class="question">
+        <label for="question3">질문 3: 이 페이지에 대한 의견을 자유롭게 남겨주세요.</label><br>
+        <textarea name="question3" id="opinion" rows="4" cols="50"></textarea>
+    </div>
+    <button class="submit-btn">제출하기</button>
+</div>
+</body>
+</html>

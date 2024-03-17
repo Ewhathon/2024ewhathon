@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- 언어 설정 -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>설문조사 결과</title>
+<link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #00462A; 
+    }
+
+    .header {
+        text-align: center;
+        color: #ffffff; 
+        font-size: 45px;
+        font-family: 'MaruBuri'; 
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+
+    .container {
+        width: 600px;
+        margin: 50px auto; 
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd; 
+        padding: 8px;
+        text-align: left;
+        font-family: 'MaruBuri'; 
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+    <div class="header"><b>설문조사 결과</b></div>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>설문 조사 이름</th> <!-- 테이블 헤더 셀 내용 -->
+                <th>게시자</th>
+                <th>게시 날짜</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>활동 만족도 조사</td> <!-- 첫 번째 데이터 행 -->
+                <td>김이화</td>
+                <td>2024년 03월 11일</td>
+            </tr>
+            <tr>
+                <td>공동구매 설문</td> <!-- 두 번째 데이터 행 -->
+                <td>최이화</td>
+                <td>2024년 03월 01일</td>
+            </tr>
+            <!-- 이후에 서버에서 가져온 데이터를 표시할 예정 -->
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

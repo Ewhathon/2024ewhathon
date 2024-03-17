@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- 언어 설정 -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+<title>복호화된 데이터</title>
+<style>
+    body {
+        font-family: 'MaruBuri', sans-serif; 
+        background-color: #00462A; 
+        color: #fff; 
+        text-align: center; 
+        padding-top: 30px; 
+    }
+    h1 {
+        font-size: 45px; 
+    }
+    .container {
+        width: 600px; 
+        margin: 50px auto; 
+        padding: 20px;
+        background-color: #fff; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: #000000; 
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #cdcdcd;
+        padding: 8px; 
+        text-align: left; 
+        font-family: 'MaruBuri'; 
+    }
+    th {
+        background-color: #e0dddd; 
+    }
+
+    input[type="checkbox"] {
+        margin-top: 20px; 
+    }
+</style>
+</head>
+<body>
+    <h1>복호화된 개인정보</h1>
+    <div class="container">
+        <table>
+            <tr>
+                <th>항목</th> <!-- 테이블 헤더 셀 내용 -->
+                <th>내용</th>
+            </tr>
+            <tr>
+                <td>이름</td> <!-- 첫 번째 데이터 행 -->
+                <td>{{ pt.name }}</td>
+            </tr>
+            <tr>
+                <td>거주지</td> <!-- 두 번째 데이터 행 -->
+                <td>{{ pt.residence }}</td>
+            </tr>
+            <tr>
+                <td>휴대전화</td> <!-- 세 번째 데이터 행 -->
+                <td>{{ pt.phone }}</td>
+            </tr>
+            <!-- 다른 개인정보에 대한 추가 행 작성 -->
+        </table>
+        <form action="/decrypt" method="post">
+            <input type="hidden" name="iv" value="{{ iv }}"> <!-- 초기화 벡터 숨김 필드 -->
+            <input type="hidden" name="ct" value="{{ ct }}"> <!-- 암호문 숨김 필드 -->
+            <input type="checkbox" name="decrypt_checkbox"> 복호화된 정보 열람 <!-- 체크박스 -->
+            <button type="submit">제출</button> <!-- 제출 버튼 -->
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+
+    <title>설문조사</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=MaruBuri&display=swap');
+        
+        body {
+            font-family: 'MaruBuri', sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #00462A; 
+        }
+
+        .header {
+            text-align: center;
+            font-size: 45px; 
+            font-family: 'MaruBuri'; 
+            margin-top: 60px;
+            color: #fff; 
+        }
+
+        .container {
+            width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333; 
+        }
+        .search-box {
+            margin-bottom: 20px; /* 검색창과 버튼과의 간격을 조정 */
+        }
+        .search-box input[type="text"] {
+            width: 40%; /* 검색 입력란 너비 조정 */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* 테두리 설정 */
+            font-size: 16px;
+            color: #333; 
+            font-family: 'MaruBuri'; 
+            margin-left: 450px; 
+            margin-bottom: 10px; 
+            margin-top: 90px; 
+        }
+        .search-box button {
+            padding: 13px;
+            background-color: #007bff; 
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: #fff; 
+            cursor: pointer;
+            font-family: 'MaruBuri'; 
+            margin-top: 10px; 
+        }
+        .survey-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50; 
+            border: none;
+            border-radius: 5px;
+            color: #fff; 
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* 배경색 변화 시 부드러운 애니메이션 적용 */
+            font-family: 'MaruBuri'; 
+            margin-bottom: 20px; 
+        }
+        .survey-button:hover {
+            background-color: #45a049; 
+        }
+        .privacy-policy {
+            text-align: center;
+            margin-top: 20px; 
+            font-size: 14px;
+            color: #333; 
+        }
+        .privacy-policy a {
+            color: #007bff; /* 링크 색상 설정 */
+            text-decoration: none;
+        }
+        .privacy-policy a:hover {
+            text-decoration: underline; /* 호버시 밑줄 표시 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="header"><b>SecureHub</b></div>
+<div class="search-box">
+    <!-- 구글 검색을 위한 폼 -->
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="설문조사 검색">
+        <button type="submit">검색</button>
+    </form>
+</div>
+<div class="container">
+    <!-- 설문 등록 버튼 -->
+    <button class="survey-button">설문 등록하기</button>
+    <div class="privacy-policy">
+        <!-- 개인정보 보호 정책 및 이용 약관 링크 -->
+        <p><a href="#">개인정보 보호 정책</a> | <a href="#">이용 약관</a></p>
+    </div>
+</div>
+</body>
+</html>

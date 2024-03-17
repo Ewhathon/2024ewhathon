@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+<title>마이페이지</title>
+<style>
+
+    body {
+        font-family: 'MaruBuri';
+        margin:0;
+        padding: 0;
+        background-color: #00462A;
+    }
+   .header {
+        text-align: center;
+        font-size: 45px; 
+        font-family: 'MaruBuri';
+        margin-bottom: 40px ; 
+        margin-top   :60px; 
+        color:#fff; 
+    }
+    .container {
+        width: 90%;
+        margin: 40px auto; 
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: 'MaruBuri';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'MaruBuri';
+    }
+    .section {
+        margin-bottom: 10px;
+        font-family: 'MaruBuri';
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .section-title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top:20px; 
+        margin-left: 30px; 
+        margin-bottom: 10px; 
+        font-family: 'MaruBuri';
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'MaruBuri';
+        width: 80%;
+    }
+    .box {
+        width: 100%;
+        padding: 10px;
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        font-family: 'MaruBuri';
+    }
+    .box h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-family: 'MaruBuri';
+        margin-left : 20px;
+    }
+    .box p {
+        font-size: 15px;
+        color: #333;
+        font-family: 'MaruBuri';
+        margin-left : 20px;
+    }
+    .personal-info {
+        font-size: 17px;
+        text-align: center;
+        color:#eeeeee; 
+    }
+    .edit-button {
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+</style>
+</head>
+<body>
+<div class="header"><b>마이페이지</b></div>
+
+<div class="personal-info">
+    <p>이름: <span id="name">홍길동</span></p>
+    <p>이메일: <span id="email">example@example.com</span></p>
+    <p>전화번호: <span id="phoneNumber">010-1234-5678</span></p>
+    <button class="edit-button" onclick="editPersonalInfo()">수정</button>
+</div>
+
+<div class="container">
+    
+    <div class="section">
+        <div class="section-title">  설문조사 데이터</div>
+        <div class="content">
+            <div class="box">
+                <h2>설문조사 결과</h2>
+                <p>설문 1: 결과 데이터</p>
+                <p>설문 2: 결과 데이터</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">  답변 수정</div>
+        <div class="content">
+            <div class="box">
+                <h2>답변 내용</h2>
+                <p>질문 1 : 답변 내용 <button onclick="deleteAnswer(this)" >삭제</button></p>
+                <p>질문 2 : 답변 내용 <button onclick="deleteAnswer(this)" >삭제</button></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function editPersonalInfo() {
+        // 개인정보 수정 기능 구현
+        alert("개인정보를 수정합니다.");
+        var newName = prompt("새로운 이름을 입력하세요:", document.getElementById('name').innerText);
+        var newEmail = prompt("새로운 이메일을 입력하세요:", document.getElementById('email').innerText);
+        var newPhoneNumber = prompt("새로운 전화번호를 입력하세요:", document.getElementById('phoneNumber').innerText);
+
+        if (newName !== null && newEmail !== null && newPhoneNumber !== null) {
+            document.getElementById('name').innerText = newName;
+            document.getElementById('email').innerText = newEmail;
+            document.getElementById('phoneNumber').innerText = newPhoneNumber;
+        }
+    }
+
+    function editAnswers() {
+        // 답변 수정 기능 구현
+        alert("답변을 수정합니다.");
+    }
+
+    function deleteAnswer(buttonElement) {
+        var confirmation = confirm("정말로 이 답변을 삭제하시겠습니까?");
+        if (confirmation) {
+            var parentParagraph = buttonElement.parentNode;
+            parentParagraph.parentNode.removeChild(parentParagraph);
+        }
+    }
+</script>
+
+</body>
+</html>
