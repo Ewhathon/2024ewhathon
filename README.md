@@ -28,3 +28,6 @@
 ## AI
 📍레포지토리 링크: https://github.com/Ewha-thon-Melting-Pot/BaeullimFlower-AI
 
+## Figma
+📍피그마 링크: https://www.figma.com/file/53XcFDd7ecq8C0TcqK9cbM/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?type=design&node-id=0%3A1&mode=design&t=GUYU6xzONMxHVABo-1
+
