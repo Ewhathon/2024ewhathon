@@ -11,6 +11,9 @@
 # 이화공구함 ewhaToolBox
 2024 해커톤 참가 팀 '총대'의 프로젝트 '이화공구함' 레퍼지토리
 
+# 프로토타입 영상
+https://drive.google.com/file/d/1jHOygkb6N74pcwgVMSboflIsJaVPsNEA/view?usp=sharing
+
 # 디렉토리 구조
 
 
