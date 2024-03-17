@@ -14,5 +14,5 @@
 
 ### `도움배움`
 용량 초과 문제로 부득이하게 구글드라이브 링크를 첨부하는 점 양해 부탁드립니다. 감사합니다.
-- [x][시연영상](https://drive.google.com/file/d/1j-MlnnEcuL5azohG_uhxCdTF-zqXqPWW/view?usp=sharing)
-- [x][기획서](https://drive.google.com/file/d/1hrq-ZlYwSFYv-PqNqOYEbaKzoOu8YLPU/view?usp=sharing)
+- [x] [시연영상](https://drive.google.com/file/d/1j-MlnnEcuL5azohG_uhxCdTF-zqXqPWW/view?usp=sharing)
+- [x] [기획서](https://drive.google.com/file/d/1hrq-ZlYwSFYv-PqNqOYEbaKzoOu8YLPU/view?usp=sharing)
