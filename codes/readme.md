@@ -2,11 +2,13 @@
 
 https://github.com/ewhamoa
 
+</br>
+</br>
 
 
-파일 구조 </br>
+파일 구조 </br> </br>
 
-EwhaMoa_FE repo (프론트엔드) </br>
+EwhaMoa_FE repo (프론트엔드) </br> 
 
 public: 로컬 사진 자료 </br>
 src: App.jsx를 포함한 전체 메인 코드 폴더 </br>
@@ -40,8 +42,17 @@ posts: 게시글 개체 관련 요소
 - PostDetail.jsx: 게시글 상세조회 창 및 게시글 삭제 기능
 - PostEdit.jsx: 동아리 게시글 수정
 - ConfEdit.jsx: 학회 게시글 수정
+- Date.jsx: 날짜 및 D-Day 계산 함수
+- WritePost.jsx: 글 작성 페이지
 
 sort: 필터링 분류 요소
+- sort.const.js: 각 분류의 아이디와 정보를 담고 있는 const
+- SubjectSort.jsx: 학회 주제 분류
+- TopicSort.jsx: 동아리 주제 분류
+- TypeSort.jsx: 소속 분류
+- WhoSort.jsx: 모집 대상 분류
+- TypeSearch.jsx: 학과 검색창
+
 
 </br>
 </br>
