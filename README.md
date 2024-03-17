@@ -16,4 +16,4 @@
 - 설명 : 교내 공동구매 진행 시 총대와 참여자들의 불편 사항이 많았기 때문에, 이화인들이 원활하게 공동구매를 진행하고 참여하는 서비스를 기획하게 되었다. 
 
 
-깃허브 계정 (https://github.com/hwakyong-Yoo/projectdemo.git)
+코드 (https://github.com/hwakyong-Yoo/projectdemo.git)
