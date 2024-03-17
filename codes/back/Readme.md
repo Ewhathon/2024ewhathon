@@ -25,10 +25,14 @@ public int hashCode() {
 }
 ```
 
+
+  
 ### 날개 매칭 기능 
 - 기획팀이 제작한 날개 유형 데이터를 저장해 전공 일치 여부와 도우미가 제공하고자 하는 도움 유형에 따라 도우미의 날개 유형을 판단
 - DisabledCourse에 도우미와 일치하는 전공의 수업이 존재하는지 여부에 따라 majorMatched에 0 또는 1을 저장
 - 날개 유형 중 `전공 일치 여부`, `도움 유형` 이 일치하는 날개 하나를 찾아서 반환
+
+  
 
 ## 🛠 서비스 구조 및 흐름
 ![](https://blog.kakaocdn.net/dn/nn1NH/btsFt3BRvzR/xMSfFzHPA4gkRdwd2wEMaK/img.png)
@@ -52,6 +56,8 @@ public int hashCode() {
 - NginX
 - Docker
 - Github Actions
+
+  
 
 ## 🦺 테스트 코드
 - 주요 기능을 제공하는 match 도메인에 대한 테스트 코드 작성
