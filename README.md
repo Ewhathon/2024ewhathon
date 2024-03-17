@@ -19,6 +19,9 @@ Portodo는 ‘포트폴리오 + 투두’라는 뜻으로 자신의 커리어를
 
 ## 📍 Tech Stack
 
+### System Architecture
+![alt text](<Slide 16_9 - 37.png>)
+
 | HTML | CSS | JavaScript | Flask | Firebase |
 |:--:|:--:|:--:|:--:|:--:|
 |<img height="50px" src="https://cdn.svgporn.com/logos/html-5.svg">|<img height="50px" src="https://cdn.svgporn.com/logos/css-3.svg">|<img height="50px" src="https://cdn.svgporn.com/logos/javascript.svg">|<img height="50px" src="https://cdn.svgporn.com/logos/flask.svg">|<img height="50px" src="https://cdn.svgporn.com/logos/firebase.svg">|
@@ -28,24 +31,7 @@ Portodo는 ‘포트폴리오 + 투두’라는 뜻으로 자신의 커리어를
 - Firebase
 - Flask
 
-<br>
-
-
-
-## 📍 System Architecture
-![alt text](<Slide 16_9 - 37.png>)
-<br>
-
-
-
-## 📍
-
-<br>
-
-
-
-## 📍 
-
+![alt text](<Slide 16_9 - 42.png>) ![alt text](<Slide 16_9 - 47.png>) ![alt text](<Slide 16_9 - 43.png>) ![alt text](<Slide 16_9 - 45.png>) ![alt text](<Slide 16_9 - 39.png>) ![alt text](<Slide 16_9 - 44.png>) ![alt text](<Slide 16_9 - 46.png>)
 <br>
 
 ## 👩‍💻 Roles
