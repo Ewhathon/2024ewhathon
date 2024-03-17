@@ -1,6 +1,6 @@
 # 도움배움 :: 나만의 이화나래 찾아보기
 
-> EarlyUs 프론트엔드 레포지토리입니다. <br />
+> ✅ [프론트엔드 코드 확인](https://github.com/EarlyUs/front)<br />
 > ✅ [프론트엔드 배포 서버](https://earlyus-front.vercel.app/, 'EarlyUs - 도움배움')<br />
 
 <br>
