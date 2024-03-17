@@ -1,6 +1,0 @@
-path: ../data/name_data/new_card_data/
-train: autosplit_train.txt
-val: autosplit_val.txt
-
-names:
-  0: name
