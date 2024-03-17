@@ -36,10 +36,10 @@ public int hashCode() {
 <br>
 
 ## 🛠 서비스 구조 및 흐름
-![서비스 구조](https://blog.kakaocdn.net/dn/nn1NH/btsFt3BRvzR/xMSfFzHPA4gkRdwd2wEMaK/img.png){: width="200" height="200"}
+<img src="https://blog.kakaocdn.net/dn/nn1NH/btsFt3BRvzR/xMSfFzHPA4gkRdwd2wEMaK/img.png" width="200">
 <br>
 ### 배포 흐름
-![배포 흐름](https://blog.kakaocdn.net/dn/bxqMy1/btsFoDYDmXc/fmLuRG7ttTu8hrW0qkaC01/img.png){: width="200" height="200"}
+<img src="https://blog.kakaocdn.net/dn/bxqMy1/btsFoDYDmXc/fmLuRG7ttTu8hrW0qkaC01/img.png" width="200">
 1. 깃허브 디폴트 브랜치에 변경 내용 커밋
 2. Github workflow가 java 프로젝트를 빌드
 3. Codedeploy, S3 접근이 가능한  IAM 키를 알고 있는 Github workflow가 S3에 빌드 파일을 업로드하고, Codedeploy로 배포 요청
