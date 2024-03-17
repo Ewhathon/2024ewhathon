@@ -38,6 +38,7 @@ public int hashCode() {
 ## 🛠 서비스 구조 및 흐름
 <img src="https://blog.kakaocdn.net/dn/nn1NH/btsFt3BRvzR/xMSfFzHPA4gkRdwd2wEMaK/img.png" width="500">
 <br>
+
 ### 배포 흐름
 <img src="https://blog.kakaocdn.net/dn/bxqMy1/btsFoDYDmXc/fmLuRG7ttTu8hrW0qkaC01/img.png" width="500">
 1. 깃허브 디폴트 브랜치에 변경 내용 커밋
