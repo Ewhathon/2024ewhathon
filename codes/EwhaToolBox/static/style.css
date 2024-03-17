@@ -1,0 +1,339 @@
+/* 공통 CSS */
+.layoutWrap {
+    display: flex;
+    height: 100vh;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .layoutLeft {
+        display: block;
+        position: relative;
+        width: 385px;
+        margin-right: 60px;
+    }
+}
+
+.layoutLeft {
+    display: none;
+    background-color: #333;
+}
+
+.layoutRight {
+    position: absolute;
+    width: 393px;
+}
+
+/* 상단바 */
+
+/* header section */
+.headerSection{
+    box-sizing: border-box;
+    width: 393px;
+    height: 55px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.133333);
+}
+
+
+/* mypage */
+.mypage {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 358px;
+    top: 17px;
+    background: url(./img/mypage.png);
+}
+
+
+/* noti */
+.noti {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 326px;
+    top: 17px;
+    background: url(./img/noti.png);
+}
+
+/* 로고 */
+.logo {
+    position: absolute;
+    width: 128px;
+    height: 30px;
+    left: 14px;
+    top: 12px;
+    background: url(./img/logo.png);
+}
+
+
+/* index.html */
+
+/* nav */
+.indexNav{
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    width: 393px;
+    height: 50px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
+    align-items: center;
+}
+
+/* 공구하기 */
+
+.indexNav > li{
+    display: block;
+    float: left;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+}
+.indexNav a{
+    display: block;
+    color: #777;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.indexNav .active{
+    color: #17794A;
+    border-bottom: solid 2px #17794A;
+}
+
+
+/* products ad container */
+.indexProductAdContainer{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 300px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 광고 이미지 예시*/
+.indexProductAdImg{
+    width: 314px;
+    height: 180px;
+    margin: auto;
+    margin-top: 30px;
+    background: url(./img/후드티.png);
+}
+
+
+/* products desc */
+.indexProductAdDescBg{
+    display: inline-block;
+    margin-top: 10px;
+    width: 370px;
+    height: 88px;
+
+    background: #025F2D;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* 광고용 멘트 */
+.indexProductAdtext{
+    display: inline-block;
+    width: 332px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 16px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+/* [후드티] 어쩌고 저쩌고 후드티 상품 설명란임... */
+.indexProductAddesc{
+    width: 332px;
+    height: 34px;
+    margin-left: 16px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #EEEEEE;
+}
+
+/* products container */
+.indexProductsList{
+    display: block;
+    padding: 10px 0px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+    width: 370px;
+    height: auto;
+
+    background: #FEFEFE;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.indexProductsListTitle{
+    display: block;
+    margin: 10px;
+    width: 226px;
+    height: 22px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.ProductBox{
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 130px;
+    
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+/* product img */
+.ProductImg{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin: 10px;
+    background: url(./img/과잠.png);
+    border-radius: 5px;
+}
+
+.ProductDesc{
+    display: inline-block;
+    width: 200px;
+    height: 110px;
+    margin: 10px;
+}
+
+.ProductCat{
+    display: block;
+    margin-top: 5px;
+    width: 190px;
+    height: 22px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #777777;
+}
+
+/* 상품 설명 영역 4온스 솜이 들어있어 보온이 잘 되는 야구점퍼 입니다 */
+.Producttext{
+    display: inline-block;
+    margin: 5px 0px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.progressbarBox{
+    width: 200px;
+}
+
+.attendees{
+    display: inline;
+    width: 62px;
+    height: 24px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #17794A;
+}
+
+
+.maxAttendees{
+    display: inline;
+    width: 42px;
+    height: 23px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #999999;
+}
+
+.ddayCount{
+    display: inline-block;
+    width: 118px;
+    height: 16px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: right;
+
+    color: #333333;
+
+}
+
+.progressbarBg{
+    width: 200px;
+    height: 5px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progressbar{
+    width: 130px;
+    height: 5px;
+
+    background: #17794A;
+    border-radius: 5px;
+}

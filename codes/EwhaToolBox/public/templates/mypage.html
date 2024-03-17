@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이화공구함</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .noto-sans {
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="layoutWrap">
+        <div class="layoutLeft">
+            <div class="serviceCopy">함께 사는 즐거움,</div>
+            <div class="serviceName">이화공구함</div>
+        </div>
+        <div class="layoutRight noto-sans">
+            <div class="headerSection">
+                <div class="logoBox" onclick="window.location.href='/'">
+                    <img class="logo" src="../static/img/logo.png">
+                    <a class="logoText">이화공구함</a>
+                </div>
+                <div class="notiNmypage">
+                    <a href="#"><img class="noti" src="../static/img/noti.svg"></a>
+                    <a href="/login"><img class="mypage" src="../static/img/mypage.svg"></a>
+                </div>
+            </div>
+            <!--여기에 수정하세요-->
+            <div class="profile">
+                <img class="profile_pic" src="../static/img/ewhalogo.png"></img>
+                <div name="nickname" class="nickname">{{nickname}}</div>
+                <div class="logoutBtn">
+                    <div class="logoutBtnText">로그아웃</div>
+                </div>
+            </div>
+
+            <!-- 네비게이션바 -->
+            <ul class="mypageNav">
+                <li><a href="#" class="tablink active" onclick="openTab(event, 'mypageMyproduct')">내 공구함</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'mypageMypost')">내 총대함</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'mypageMydesign')">내 디자인</a></li>
+            </ul>
+
+            <!-- 네비게이션바에서 내 공구함 선택했을 경우 -->
+            <div id="mypageMyproduct" class="tabcontent">
+                <div class="MypageContent">
+                    <div class="ProductBox">
+                        <img class="ProductImg" src="../static/img/과잠.png"></img>
+                        <div class="ProductDesc">
+                            <a class="ProductCat">카테고리</a>
+                            <p class="Producttext">상품이름</p>
+                            <div class="progressbarBox">
+                                <div class="attendees">20명</div>
+                                <div class="maxAttendees">/30명</div>
+                                <div class="ddayCount">마감까지 7일</div>
+                                <div class="progressbarBg">
+                                    <div class="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProductBox">
+                        <img class="ProductImg" src="../static/img/과잠.png"></img>
+                        <div class="ProductDesc">
+                            <a class="ProductCat">카테고리</a>
+                            <p class="Producttext">상품 이름</p>
+                            <div class="progressbarBox">
+                                <div class="attendees">20명</div>
+                                <div class="maxAttendees">/30명</div>
+                                <div class="ddayCount">마감까지 7일</div>
+                                <div class="progressbarBg">
+                                    <div class="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProductBox">
+                        <img class="ProductImg" src="../static/img/과잠.png"></img>
+                        <div class="ProductDesc">
+                            <a class="ProductCat">카테고리</a>
+                            <p class="Producttext">상품 이름</p>
+                            <div class="progressbarBox">
+                                <div class="attendees">20명</div>
+                                <div class="maxAttendees">/30명</div>
+                                <div class="ddayCount">마감까지 7일</div>
+                                <div class="progressbarBg">
+                                    <div class="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!-- 네비게이션바에서 내 총대함 선택했을 경우 -->
+            <div id="mypageMypost" class="tabcontent">
+                <div class="MypageContent">
+                    <div class="ProductBox">
+                        <div class="ProductImg"></div>
+                        <div class="ProductDesc">
+                            <a class="ProductCat">카테고리</a>
+                            <p class="Producttext">상품이름</p>
+                            <div class="manageBtn">
+                                <div class="manageBtnText"><span class="manageBtnTextHl">관리</div>
+                            </div>
+                            <div class="progressbarBox">
+                                <div class="attendees">20명</div>
+                                <div class="maxAttendees">/30명</div>
+                                <div class="ddayCount">마감까지 7일</div>
+                                <div class="progressbarBg">
+                                    <div class="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ProductBox">
+                        <div class="ProductImg"></div>
+                        <div class="ProductDesc">
+                            <a class="ProductCat">카테고리</a>
+                            <p class="Producttext">상품이름</p>
+                            <div class="manageBtn">
+                                <div class="manageBtnText"><span class="manageBtnTextHl">관리</div>
+                            </div>
+                            <div class="progressbarBox">
+                                <div class="attendees">20명</div>
+                                <div class="maxAttendees">/30명</div>
+                                <div class="ddayCount">마감까지 7일</div>
+                                <div class="progressbarBg">
+                                    <div class="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+
+            <!-- 네비게이션바에서 내 디자인 선택했을 경우 -->
+            <div id="mypageMydesign" class="tabcontent">
+                <div class="MypageDesign">
+                    <div class="designBox">
+                        <div class="designImg"></div>
+                        <div class="designDeleteBtn"></div>
+                    </div>
+                    <div class="designBox">
+                        <div class="designImg"></div>
+                        <div class="designDeleteBtn"></div>
+                    </div>
+                    <div class="designBox">
+                        <div class="designImg"></div>
+                        <div class="designDeleteBtn"></div>
+                    </div>
+                    <div class="designBox">
+                        <div class="designImg"></div>
+                        <div class="designDeleteBtn"></div>
+                    </div>
+                    <div class="designBox">
+                        <div class="designRegisterBtn"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                var tabcontent = document.getElementsByClassName("tabcontent");
+                for (var i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                // 초기 내 공구함 탭을 열도록 설정
+                document.getElementById("mypageMyproduct").style.display = "block";
+
+                // 탭을 열고 닫는 함수
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

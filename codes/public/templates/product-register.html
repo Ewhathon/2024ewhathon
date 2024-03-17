@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이화공구함</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .noto-sans {
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layoutWrap">
+        <div class="layoutLeft">
+            <div class="serviceCopy">함께 사는 즐거움,</div>
+            <div class="serviceName">이화공구함</div>
+        </div>
+        <div class="layoutRight noto-sans">
+            <div class="headerSection">
+                <div class="logoBox" onclick="window.location.href='/'">
+                    <img class="logo" src="../static/img/logo.png">
+                    <a class="logoText">이화공구함</a>
+                </div>
+                <div class="notiNmypage">
+                    <a href="#"><img class="noti" src="../static/img/noti.svg"></a>
+                    <a href="/login"><img class="mypage" src="../static/img/mypage.svg"></a>
+                </div>
+            </div>
+            <div class="productRegisterSection">
+                <form action="/productRegister" method="post">
+                    <div class="productInputSection">
+                        <p class="productInputLabel">카테고리</p>
+                        <select class="productInputField" id="category" name="category">
+                            <option>선택</option>
+                            <option value="department">과잠</option>
+                            <option value="dopba">돕바</option>
+                            <option value="fleece">플리스</option>
+                            <option value="hood">후드티</option>
+                            <option value="mentomen">맨투맨</option>
+                            <option value="wind">바람막이</option>
+                            <option value="hoodjip">후드집업</option>
+                            <option value="tshirt">티셔츠</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </div>
+                    <div class="productInputSection">
+                        <label for="inputTitle"></label>
+                        <p class="productInputLabel">제목</p>
+                        <input type="text" class="productInputField" id="inputTitle" name="title" placeholder=" 상품 이름" required>
+                    </div>
+
+                    <div class="productInputSection">
+                        <label for="inputSummary"></label>
+                        <p class="productInputLabel">한줄설명</p>
+                        <input type="text" class="productInputField" id="inputSummary" name="desc" placeholder=" 한줄 설명을 입력해주세요. (글자수 제한 50자)" required>
+                    </div>
+
+                    <div class="productInputSection">
+                        <p class="productInputLabel">모집기간</p>
+                        <div class="DateBox">
+                            <select id="year" name="period_start_year">
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                            <select id="month" name="period_start_month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select id="day" name="period_start_day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <a class="from-text">부터</a>
+                        </div>
+                        <div class="DateBox">
+                            <select id="year2" name="period_end_year">
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                            <select id="month2" name="period_end_month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select id="day2" name="period_end_day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <a class="until-text">까지</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="productInputSection">
+                        <label for="inputPrice"></label>
+                        <p class="productInputLabel">가격</p>
+                        <input type="text" class="productInputField" id="price" name="price" placeholder=" 상품 가격(원)" required>
+                    </div>
+                    <div class="productInputSection">
+                        <label for="inputAmount"></label>
+                        <p class="productInputLabel">최소수량</p>
+                        <input type="text" class="productInputField" id="inputMinAmount" name="min_amount" placeholder=" 최소수량 (개)" required>
+                        </br>
+                        <p class="productInputLabel">최대수량</p>
+                        <input type="text" class="productInputField" id="inputMaxAmount" name="max_amount" placeholder=" 최대수량 (개)" required>
+                    </div>
+                    <div class="productInputSection">
+                        <label for="inputImage"></label>
+                        <p class="productInputLabel">상품 이미지</p>
+                        <input type="button" id="getImage_button" name="image_url" value="이미지 불러오기"><br>
+                    </div>
+                    <div class="productInputSection">
+                        <label for="inputAdd"></label>
+                        <p class="productInputLabel">옵션 추가</p></br>
+                        <div class="optionTitle">
+                            <input type="text" class="productInputField" id="inputAdd" name="option_cnt" placeholder=" 옵션 이름" required>
+                            <a href="#" class="trashButton">
+                                <img src="../static/img/trash.png" alt="삭제">
+                            </a>
+                            <a href="#" class="plusButton">
+                                <img src="../static/img/plus.png" alt="추가">
+                            </a>
+                        </div>
+                        <div class="optionTitle">
+                            <input type="text" class="productInputField" id="inputAdddetail" name="inputAdddetail" placeholder=" 옵션 선택지" required>
+                            <a href="#" class="trashButton">
+                                <img src="../static/img/trash.png" alt="삭제">
+                            </a>
+                            <a href="#" class="plusButton">
+                                <img src="../static/img/plus.png" alt="추가">
+                            </a>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="productInputSection">
+                        <p class="productInputLabel">공구상태</p>
+                        <select class="productInputField" id="condition" name="status">
+                            <option value="recruiting">모집중</option>
+                            <option value="expiration">기간만료</option>
+                            <option value="inproduce">제작중</option>
+                            <option value="doneproduce">제작완료</option>
+                            <option value="expected">배부예정</option>
+                            <option value="finish">배부완료</option>
+                            <option value="allcompleted">공구종료</option>
+                        </select>
+                    </div>
+
+                    <div class="productInputSection">
+                        <button type="submit" class="registrationBtn" formaction="/product-register/submit">공구 등록</button>
+        
+                    </div>
+
+                </form>
+            </div>
+
+    
+        </div>
+    </div>
+</body>
+
+</html>

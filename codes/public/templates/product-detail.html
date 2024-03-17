@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이화공구함</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .noto-sans {
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="layoutWrap">
+        <div class="layoutLeft">
+            <div class="serviceCopy">함께 사는 즐거움,</div>
+            <div class="serviceName">이화공구함</div>
+        </div>
+        <div class="layoutRight noto-sans">
+            <div class="headerSection">
+                <div class="logoBox" onclick="window.location.href='/'">
+                    <img class="logo" src="../static/img/logo.png">
+                    <a class="logoText">이화공구함</a>
+                </div>
+                <div class="notiNmypage">
+                    <a href="#"><img class="noti" src="../static/img/noti.svg"></a>
+                    <a href="/login"><img class="mypage" src="../static/img/mypage.svg"></a>
+                </div>
+            </div>
+
+            <div class="productDeatilContainer">
+                <div class="productDeatilImage">
+                    <!-- 이미지를 표시할 img 요소 -->
+                    <img id="productDetailImage" src="../static/img/과잠.png" alt="상품이미지">
+                    <!-- 공구 진행 상태 -->
+                    <div class="statusBox"><a id="statusText">모집중</a></div>
+                    <!-- 상품 이름 -->
+                    <a id="productDetailTitle">따뜻한 4온스 영문 학잠</a>
+                </div>
+
+                <div class="productDetailInfo">
+                    <div class="productDetailBox">
+                        <a id="productDetailDescription">영문으로 표기되어 있는 4온스 학잠입니다.</a>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">가격</div><a class="productDetailVar" id="productDetailPrice">45,000원</a>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">판매기간</div><a class="productDetailVar" id="productDetailTerm">2024.03.15~2024.03.18</a>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">진행상황</div>
+                        <div class="progressbarBox">
+                            <div class="attendees">20명</div>
+                            <div class="maxAttendees">/30명</div>
+                            <div class="ddayCount">마감까지 7일</div>
+                            <div class="progressbarBg">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">총대</div>
+                        <div class="userBox">
+                            <img src="../static/img/ewhalogo.png">
+                            <a class="userName">익명의 이화인</br>공구 진행 횟수 2번</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="participateSection">
+                    <button type="submit" class="participate-button" formaction="/register">공구 참여</button>
+                </div>
+            </div>
+
+            <ul class="productDeatilNav">
+                <li><a href="#" class="tablink active" onclick="openTab(event, 'productDeatilGongji')">공지</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilReview')">후기</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilQ&Q')">QnA</a></li>
+            </ul>
+
+            <script>
+                // // Flask에서 받아온 이미지 URL
+                // var imageUrl = "{{ image_url }}";
+            
+                // // 이미지를 표시하는 함수
+                // function displayImage() {
+                //     var imageElement = document.getElementById('productDetailImage');
+                //     // 이미지의 src 속성을 Flask에서 받아온 이미지 URL로 설정
+                //     imageElement.src = imageUrl;
+                // }
+                // // 페이지가 로드될 때 이미지 표시 함수를 호출
+                // window.onload = function() {
+                //     displayImage();
+                // };
+            </script>
+
+
+            <!-- 각 탭 내용 -->
+            <div id="productDeatilGongji" class="tabcontent">
+                <div class="writeGongji">
+                    <p class="writegongji-text">공지 남기기</p>
+                    <a href="#">
+                        <img class="addButton" src="../static/img/edit.png" alt="추가">
+                    </a>
+                </div>
+                <div class="gongjiTab">
+                    <p class="gongjiTab-text">안녕하세요, 총대입니다.</p>
+                    <a href="#">
+                        <img class="editButton" src="../static/img/more.png" alt="추가">
+                    </a>
+                </div>
+            </div>
+            
+            <div id="productDeatilReview" class="tabcontent">
+                <div class="writeGongji">
+                    <p class="writegongji-text">후기 남기기</p>
+                    <a href="#">
+                        <img class="addButton" src="../static/img/edit.png" alt="추가">
+                    </a>
+                </div>
+                <div class="laterTab">
+                    <p class="gongjiTab-text">공구 열어주셔서 감사합니다!!</p>
+                    <img id="laterImage" src="../static/img/pleeceex.png" alt="후기">
+                    <a href="#">
+                        <img class="laterButton" src="../static/img/more.png" alt="추가">
+                    </a>
+
+                </div>
+            </div>
+            
+            <div id="productDeatilQ&Q" class="tabcontent">
+                <div class="writeGongji">
+                    <p class="writegongji-text">Q&A</p>
+                    <a href="#">
+                        <img class="addButton" src="../static/img/edit.png" alt="추가">
+                    </a>
+                </div>
+                <div class="gongjiTab">
+                    <p class="gongjiTab-text">안녕하세요, 언제 배송되는 건가요?</p>
+                    <a href="#">
+                        <img class="editButton" src="../static/img/more.png" alt="추가">
+                    </a>
+                </div>
+                <div class="answer">
+                    <img id="arrowImage" src="../static/img/arrowedit.png" alt="화살표">
+                    <div class="answerTab">
+                        <p class="gongjiTab-text">안녕하세요, 총대입니다. 배송 곧입니다.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <script>
+
+                var tabcontent = document.getElementsByClassName("tabcontent");
+                for (var i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                // 초기 홈 탭을 열도록 설정
+                document.getElementById("productDeatilGongji").style.display = "block";
+
+            
+                // 탭을 열고 닫는 함수
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+            
+        </div>
+    </div>
+</body>
+</html>

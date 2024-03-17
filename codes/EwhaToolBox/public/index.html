@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이화공구함</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="layoutWrap">
+        <div class="layoutLeft">
+
+        </div>
+        <div class="layoutRight">
+            <div class="headerSection">
+                <div class="logoBox">
+                    <img class="logo" src="./static/img/logo.png">
+                    <a class="logoText">이화공구함</a>
+                </div>
+                <div class="notiNmypage">
+                    <img class="noti" src="./static/img/noti.svg">
+                    <a href="/login"><img class="mypage" src="./static/img/mypage.svg"></a>
+                </div>
+            </div>
+            <ul class="indexNav">
+                <li><a href="#" class="tablink active" onclick="openTab(event, 'product')">공구하기</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'post')">총대매기</a></li>
+            </ul>
+
+
+            <!-- 공구하기 탭 -->
+            <div id="product" class="tabcontent">
+                <div class="indexProductAdContainer">
+                    <img class="indexProductAdImg" src="./static/img/후드티.png"></img>
+                    <div class="indexProductAdDescBg">
+                        <div class="indexProductAdtext">오늘 공구 마감이에요! 3자리 남았어요!</div>
+                        <div class="indexProductAddesc">[후드티] 어쩌고 저쩌고 후드티 상품 설명란임...</div>
+                    </div>
+                </div>
+                
+                <div class="indexProductsList">
+                    <div class="indexProductsListTitle">지금 진행중인 공구 아이템</div>
+                    <div class="ProductBox">
+                        <img class="ProductImg" src="./static/img/과잠.png"></img>
+                        <div class="ProductDesc">
+                            <a class="ProductCat">학잠</a>
+                            <p class="Producttext">상품 설명 영역 4온스 솜이 들어있어 보온이 잘 되는 야구점퍼 입니다</p>
+                            <div class="progressbarBox">
+                                <div class="attendees">20명</div>
+                                <div class="maxAttendees">/30명</div>
+                                <div class="ddayCount">마감까지 7일</div>
+                                <div class="progressbarBg">
+                                    <div class="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 총대매기 탭 -->
+            <div id="post" class="tabcontent">
+                <div class="mydesignOpenBtn">
+                    <div class="mydesignOpenBtnText"><span class="mydesignOpenBtnTextHl">내 디자인</span>으로 총대매기</div>
+                </div>
+                <div class="mydesignOpenBtn">
+                    <div class="mydesignOpenBtnText"><span class="mydesignOpenBtnTextHl">오픈 디자인</span>으로 총대매기</div>
+                </div>
+                <div class="indexProductsList">
+                    <div class="indexProductsListTitle">역대 오픈 디자인 랭킹</div>
+                    <div class="ProductBox">
+                        <img class="ProductImg" src="./static/img/과잠.png"></img>
+                        <div class="ProductDesc">
+                            <a class="ProductCat">학잠</a>
+                            <p class="totalSold">역대 공구 참여 인원 <span class="totalSoldHl">23,807명</span></p>
+                            <button class="opendesignOpenBtn"><a>이 디자인으로 총대매기</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                var tabcontent = document.getElementsByClassName("tabcontent");
+                for (var i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                // 초기 공구하기 탭을 열도록 설정
+                document.getElementById("product").style.display = "block";
+
+                // 탭을 열고 닫는 함수
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+
+        </div>
+    </div>
+</body>
+</html>

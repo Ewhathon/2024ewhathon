@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이화공구함</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .noto-sans {
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="layoutWrap">
+        <div class="layoutLeft">
+            <div class="serviceCopy">함께 사는 즐거움,</div>
+            <div class="serviceName">이화공구함</div>
+        </div>
+        <div class="layoutRight noto-sans">
+            <div class="headerSection">
+                <div class="logoBox" onclick="window.location.href='/'">
+                    <img class="logo" src="../static/img/logo.png">
+                    <a class="logoText">이화공구함</a>
+                </div>
+                <div class="notiNmypage">
+                    <a href="#"><img class="noti" src="../static/img/noti.svg"></a>
+                    <a href="/login"><img class="mypage" src="../static/img/mypage.svg"></a>
+                </div>
+            </div>
+            <div class="loginSection">
+                <div class="login-text"><a>로그인</a></div>
+            </div>  
+            <div class="loginBox">
+                <form action="/login" method="post">
+                    <label for="email"></label>
+                    <input type="email" id="email" class="loginInputField" name="email" placeholder=" 이메일 주소" required>
+                    <label for="password"></label>
+                    <input type="password" id="password" class="loginInputField" name="pw" placeholder=" 비밀번호" required>
+                    <input type="submit" class="loginBtn" value="로그인">
+                </form>
+                <button type="button" class="loginBtn" onclick="window.location.href='/create-account'">회원가입</button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>
